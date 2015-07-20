@@ -20,7 +20,7 @@ describe('Heed', function () {
   });
 
   afterEach(function () {
-    heed = null;
+    deps = heed = null;
   });
 
   it('exposes a constructor', function () {
