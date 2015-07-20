@@ -38,6 +38,20 @@ describe('Heed', function () {
     assume(heed).to.not.have.property('allowed', '1.2.invalid');
   });
 
+  describe('#deps', function () {
+    it('is a function', function () {
+      assume(heed.deps).to.be.a('function');
+    });
+
+    it('sets the dependencies', function () {
+      let obj = {};
+      let result = heed.deps(obj);
+
+      assume(heed.dependencies).to.equal(obj);
+      assume(result).to.be.instanceof(Heed);
+    });
+  });
+
   describe('#to', function () {
     it('is a function', function () {
       assume(heed.to).to.be.a('function');

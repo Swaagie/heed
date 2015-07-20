@@ -11,7 +11,21 @@ export default class Heed {
    * @api public
    */
   constructor(dependencies = {}) {
-    this.dependencies = dependencies;
+    this.deps(dependencies);
+  }
+
+  /**
+   * Set the dependencies.
+   *
+   * @param {Object} set Packages mapped to semver.
+   * @return {Heed} fluent interface.
+   * @api public
+   */
+  deps(set) {
+    if ('object' !== typeof set) return this;
+
+    this.dependencies = set;
+    return this;
   }
 
   /**
