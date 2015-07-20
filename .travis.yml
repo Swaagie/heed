@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.12"
+  - "iojs"
+git:
+  depth: 10
+before_install:
+  - "npm config set loglevel error"
+script:
+  - "npm run test-travis"
+after_script:
+  - "npm install coveralls@2.11.x && cat coverage/lcov.info | coveralls"
