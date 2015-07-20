@@ -1,0 +1,25 @@
+{
+  "name": "heed",
+  "version": "1.0.0",
+  "description": "Check dependency semver against an allowed semver",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublish": "mkdir -p dist && babel -o ./dist/index.js ./index.js",
+    "test": "mocha --spec reporter --compilers js:babel/register ./test.js",
+    "watch": "mocha --watch --spec reporter --compilers js:babel/register ./test.js",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- ./test.js --compilers js:babel/register",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- ./test.js --compilers js:babel/register"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "assume": "~1.2.5",
+    "babel": "~5.6.23",
+    "istanbul": "~0.3.17",
+    "mocha": "~2.2.5",
+    "pre-commit": "~1.0.10"
+  },
+  "dependencies": {
+    "semver": "~5.0.1"
+  }
+}
