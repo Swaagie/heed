@@ -10,7 +10,7 @@
     "coverage": "istanbul cover node_modules/.bin/_mocha -- ./test.js --compilers js:babel/register",
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- ./test.js --compilers js:babel/register"
   },
-  "author": "",
+  "author": "Martijn Swaagman",
   "license": "MIT",
   "devDependencies": {
     "assume": "~1.2.5",
