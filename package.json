@@ -10,6 +10,13 @@
     "coverage": "istanbul cover node_modules/.bin/_mocha -- ./test.js --compilers js:babel/register",
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- ./test.js --compilers js:babel/register"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Swaagie/heed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Swaagie/heed/issues"
+  },
   "author": "Martijn Swaagman",
   "license": "MIT",
   "devDependencies": {
