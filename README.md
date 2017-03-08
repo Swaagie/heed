@@ -1,5 +1,7 @@
 # Heed
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Swaagie/heed.svg)](https://greenkeeper.io/)
+
 [![Version npm][version]](http://browsenpm.org/package/heed)[![Build Status][build]](https://travis-ci.org/Swaagie/heed)[![Dependencies][david]](https://david-dm.org/Swaagie/heed)[![Coverage Status][cover]](https://coveralls.io/r/Swaagie/heed?branch=master)
 
 [version]: http://img.shields.io/npm/v/heed.svg?style=flat-square
